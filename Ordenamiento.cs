@@ -8,6 +8,19 @@ namespace OrdenamientoBusqueda_G2_2024_1
 {
     internal class Ordenamiento
     {
+        internal static int[] Generar(int N) //generamos un vector aleatorio
+        {
+
+            Random aleatorio = new Random();
+            int [] A = new int[N];
+            for (int i = 0; i < N; i++)
+            {
+                A[i] = (int)(aleatorio.NextDouble() * 10000);
+            }
+
+            return A;
+        }
+
         internal static void Imprime(int[]A)
         {
             foreach (int a in A)
@@ -15,6 +28,7 @@ namespace OrdenamientoBusqueda_G2_2024_1
                 Console.Write("{0} ", a);
             }
         }
+
         internal static void Burbuja(int [] A)
         {
             int N = A.Length;
