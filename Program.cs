@@ -10,7 +10,15 @@ namespace OrdenamientoBusqueda_G2_2024_1
     {
         static void Main(string[] args)
         {
+            int[] A = { 5, 7, 1, 12, 20, 8 };
 
+            Console.WriteLine("******** Matriz Original ********");
+            Ordenamiento.Imprime(A);
+            Ordenamiento.Burbuja(A);
+            Console.WriteLine("\n******** Matriz Ordenada ********");
+            Ordenamiento.Imprime(A);
+
+            Console.ReadLine();
         }
     }
 }
