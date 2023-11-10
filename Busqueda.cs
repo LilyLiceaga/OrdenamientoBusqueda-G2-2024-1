@@ -29,6 +29,7 @@ namespace OrdenamientoBusqueda_G2_2024_1
             else
             {
                 int CEN = (IZQ + DER) / 2;
+
                 if ( A[CEN] == x )
                 {
                     return CEN;
@@ -37,7 +38,7 @@ namespace OrdenamientoBusqueda_G2_2024_1
                 {
                     return Binario(A, IZQ, CEN, x);
                 }
-                else
+                else if (x > A[CEN])
                 {
                     return Binario(A, CEN, DER, x);
                 }
